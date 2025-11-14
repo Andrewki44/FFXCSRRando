@@ -1036,7 +1036,7 @@ static class Transitions
         //  new Transition { RoomNumber = 255, Storyline = 2970, SpawnPoint = 0, AirshipDestinations = 2560, PositionTidusAfterLoad = true, Target_x = -242.858f, Target_y = 12.126f, Target_z = 160.448f, Target_rot = 1.556f, Target_var1 = 1390, Description = "Return from Highbridge"} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 255 && MemoryWatchers.Storyline.Current == 2990; }, 
-            new Transition { RoomNumber = 255, Storyline = 3010, SpawnPoint = 0, RemoveSinLocation = true, Description = "Sin destination cutscene"} }, //Bug (Minor): Wrong area/spawn
+            new Transition { RoomNumber = 255, Storyline = 3010, SpawnPoint = 0, /*RemoveSinLocation = true, */Description = "Sin destination cutscene"} }, //Bug (Minor): Wrong area/spawn
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 277 && MemoryWatchers.Storyline.Current == 3010; }, 
             new Transition { RoomNumber = 199, Storyline = 3085, Description = "Left Fin" } },
@@ -1106,7 +1106,7 @@ static class Transitions
             new Transition { RoomNumber = 254, Storyline = 882, EncounterMapID = 0, EncounterFormationID2 = 0, Description = "Sinspawn Gui 2"} },
         { 
             () => { return MemoryWatchers.EncounterMapID.Current == 39 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.Storyline.Current == 1420; }, 
-            new Transition { RoomNumber = 248, Storyline = 1470, EncounterMapID = 0, EncounterFormationID2 = 0, SpawnPoint = 2, PositionTidusAfterLoad = true, Target_x = -12.163f, Target_y = 0.816f, Target_z = 34.410f, Target_rot = -1.454f, Target_var1 = 135, Description = "Spherimorph", AddOverdrive = 16 } },
+            new Transition { RoomNumber = 248, Storyline = 1470, EncounterMapID = 0, EncounterFormationID2 = 0, SpawnPoint = 2, PositionTidusAfterLoad = true, Target_x = -12.163f, Target_y = 0.816f, Target_z = 34.410f, Target_rot = -1.454f, Target_var1 = 135, Description = "Spherimorph", /*AddOverdrive = 16 */} },
         { 
             () => { return MemoryWatchers.EncounterMapID.Current == 44 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.Storyline.Current == 1485; }, 
             new Transition { RoomNumber = 192, Storyline = 1504, EncounterMapID = 0, EncounterFormationID2 = 0, SpawnPoint = 1, TargetFramerate = 2, /*FormationSwitch = Transition.formations.PostCrawler, */Description = "Crawler"} },

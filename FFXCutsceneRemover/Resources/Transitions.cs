@@ -785,6 +785,9 @@ static class Transitions
             new Transition { RoomNumber = 135, Storyline = 1210, SpawnPoint = 1, PositionTidusAfterLoad = true, Target_x = -9.995f, Target_y = -6.983f, Target_z = 135.763f, Target_rot = 0.556f, Target_var1 = 267, Description = "Macarena Temple"} },       
         // END OF GUADOSALAM
         // START OF THUNDER PLAINS
+        {
+            () => { return MemoryWatchers.RoomNumber.Current == 140 && MemoryWatchers.Storyline.Current == 1300 && MemoryWatchers.CutsceneAlt.Current == 2524; },
+            new Transition { RoomNumber = 140, Storyline = 1300, SpawnPoint = 0, Description = "Thunderplains Entrance"} },
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 140 && MemoryWatchers.Storyline.Current == 1310 && MemoryWatchers.ThunderPlainsFlag.Current == 0x08; },
             new Transition { RoomNumber = 256, Storyline = 1310, SpawnPoint = 0, ThunderPlainsFlag = 0x18, Description = "Rikku freaks out"} },

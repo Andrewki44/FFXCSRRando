@@ -1007,9 +1007,9 @@ static class Transitions
         { 
             () => { return MemoryWatchers.RoomNumber.Current == 272 && MemoryWatchers.Storyline.Current == 2585 && MemoryWatchers.GagazetCaveFlag.Current == 0; },
             new Transition { GagazetCaveFlag = 29120, Description = "Gagazet Cave scenes"} },
-        { 
-            () => { return MemoryWatchers.RoomNumber.Current == 311 && MemoryWatchers.Storyline.Current == 2585; }, 
-            new SanctuaryTransition {ForceLoad = false, Description = "Sanctuary Keeper", Suspendable = false, Repeatable = true} },
+        //{ 
+        //    () => { return MemoryWatchers.RoomNumber.Current == 311 && MemoryWatchers.Storyline.Current == 2585; }, 
+        //    new SanctuaryTransition {ForceLoad = false, Description = "Sanctuary Keeper", Suspendable = false, Repeatable = true} },
             // END OF GAGAZET
             // START OF ZANARKAND
         { 
@@ -1157,9 +1157,9 @@ static class Transitions
         { 
             () => { return MemoryWatchers.EncounterMapID.Current == 65 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.Storyline.Current == 2530; }, 
             new Transition { RoomNumber = 285, Storyline = 2560, SpawnPoint = 2, EncounterMapID = 0, EncounterFormationID2 = 0, TargetFramerate = 2, PositionTidusAfterLoad = true, Target_x = 31.580f, Target_y = -19.991f, Target_z = -202.674f, Target_rot = -0.509f, Target_var1 = 662, Description = "Seymour Flux"} },
-        { 
-            () => { return MemoryWatchers.EncounterMapID.Current == 68 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.RoomNumber.Current == 311 && MemoryWatchers.Storyline.Current == 2585; }, 
-            new Transition { RoomNumber = 311, Storyline = 2680, SpawnPoint = 0, PositionTidusAfterLoad = true, Target_x = 1167.635f, Target_y = -30.038f, Target_z = -1127.956f, Target_rot = -2.844f, Target_var1 = 794, Description = "Sanctuary Keeper"} },
+        //{ 
+        //    () => { return MemoryWatchers.EncounterMapID.Current == 68 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.RoomNumber.Current == 311 && MemoryWatchers.Storyline.Current == 2585; }, 
+        //    new Transition { RoomNumber = 311, Storyline = 2680, SpawnPoint = 0, PositionTidusAfterLoad = true, Target_x = 1167.635f, Target_y = -30.038f, Target_z = -1127.956f, Target_rot = -2.844f, Target_var1 = 794, Description = "Sanctuary Keeper"} },
         { 
             () => { return MemoryWatchers.EncounterMapID.Current == 71 && MemoryWatchers.EncounterFormationID2.Current == 0 && MemoryWatchers.RoomNumber.Current == 317 && MemoryWatchers.Storyline.Current == 2775; }, 
             new Transition { RoomNumber = 318, Storyline = 2815, Description = "Spectral Keeper to Yunalesca"} },
